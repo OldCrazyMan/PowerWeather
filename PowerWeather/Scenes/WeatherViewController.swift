@@ -155,7 +155,7 @@ class WeatherViewController: UIViewController {
             hourlyForecastView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             hourlyForecastView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             
-            dailyForecastView.topAnchor.constraint(equalTo: hourlyForecastView.bottomAnchor, constant: 20),
+            dailyForecastView.topAnchor.constraint(equalTo: hourlyForecastView.bottomAnchor, constant: 10),
             dailyForecastView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             dailyForecastView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             dailyForecastView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)

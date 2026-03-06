@@ -15,7 +15,7 @@ class CurrentWeatherView: UIView {
     private let temperatureLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 72, weight: .thin)
+        label.font = .systemFont(ofSize: 72, weight: .bold)
         label.textAlignment = .center
         return label
     }()
@@ -106,14 +106,14 @@ class CurrentWeatherView: UIView {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            locationLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+            locationLabel.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             locationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             locationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             
-            temperatureLabel.topAnchor.constraint(equalTo: locationLabel.bottomAnchor, constant: 8),
+            temperatureLabel.topAnchor.constraint(equalTo: locationLabel.bottomAnchor, constant: 5),
             temperatureLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            conditionIcon.topAnchor.constraint(equalTo: temperatureLabel.bottomAnchor, constant: 8),
+            conditionIcon.topAnchor.constraint(equalTo: temperatureLabel.bottomAnchor),
             conditionIcon.centerXAnchor.constraint(equalTo: centerXAnchor),
             conditionIcon.widthAnchor.constraint(equalToConstant: 60),
             conditionIcon.heightAnchor.constraint(equalToConstant: 60),
@@ -126,7 +126,7 @@ class CurrentWeatherView: UIView {
             detailsStack.topAnchor.constraint(equalTo: conditionLabel.bottomAnchor, constant: 20),
             detailsStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             detailsStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            detailsStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20)
+            detailsStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5)
         ])
         
         feelsLikeLabel.widthAnchor.constraint(equalTo: windLabel.widthAnchor).isActive = true

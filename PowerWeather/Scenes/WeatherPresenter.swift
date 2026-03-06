@@ -81,9 +81,9 @@ class WeatherPresenter: WeatherPresentationLogic {
             location: "\(location.name), \(location.country)",
             temperature: "\(Int(weather.current.tempC))°",
             condition: weather.current.condition.text,
-            feelsLike: "Ощущается как \(Int(weather.current.feelslikeC))°",
-            windSpeed: "Ветер \(Int(weather.current.windKph)) км/ч",
-            humidity: "Влажность \(weather.current.humidity)%",
+            feelsLike: "Ощущается как\n\(Int(weather.current.feelslikeC))°",
+            windSpeed: "Ветер\n\(Int(weather.current.windKph)) км/ч",
+            humidity: "Влажность\n\(weather.current.humidity)%",
             iconURL: iconURL
         )
     }
