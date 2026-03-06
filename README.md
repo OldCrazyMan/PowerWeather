@@ -18,3 +18,6 @@
 - **CoreLocation** — получение координат пользователя.
 - **Kingfisher** — загрузка и кэширование иконок погоды (установлен через **Swift Package Manager**).
 - **SOLID**, чистая архитектура, паттерны проектирования.
+
+## Как выглядит:
+<img width="250" alt="1" src="https://github.com/user-attachments/assets/2c3541a2-fbcd-45d3-89fd-d4f8f568df6c">
